@@ -21,7 +21,7 @@ asientos_p1_viernes_17_30= [4, 6, 8, 9, 12, 14, 18, 20, 22, 25, 28, 31, 34, 37, 
 
 # diccionario donde se muestra las horas y salas de todos los dias disponibles
 
-pelicula_1= {"nombre de la pelicula":"Encantada", #nombre de la pelicula
+pelicula_1= {"nombre de la pelicula":"encantada", #nombre de la pelicula
             "sinopsis":"""La bella princesa Giselle es transportada por un hechizo de la malvada reina 
             Narissa desde su mágico mundo a la moderna y caótica Manhattan actual.Inmersa
             en un entorno que desconoce,Giselle deambula por un mundo desorganizado.""" , #aqui se muestra la sinopsis de la pelicula
@@ -73,7 +73,7 @@ asientos_p2_viernes_13_00= [9, 33, 1, 27, 44, 24, 15, 25]
 
 # diccionario donde se muestra las horas y salas de todos los dias disponibles
 
-pelicula_2= {"nombre de la pelicula":"HUNTRIX", #nombre de la pelicula
+pelicula_2= {"nombre de la pelicula":"huntrix", #nombre de la pelicula
              "sinopsis":"""Un supergrupo de k-pop usa sus poderes secretos para proteger a sus fans de amenazassobrenaturales y de una banda rival de chicos decididos a robar corazones y mentes. """, #aqui se muestra la sinopsis de la pelicula
             "duracion": "1h 31m", #duracion de la peli
             "dias disponibles": dias_p2, #dias disponibles de la peli
@@ -122,7 +122,7 @@ asientos_p3_viernes_20_00= [12,27,43,6,21,38,2,49] #asientos disponibles con la 
 
 # diccionario donde se muestra las horas y salas de todos los dias disponibles
 
-pelicula_3= {"nombre de la pelicula":"Spiderman", #nombre de la pelicula
+pelicula_3= {"nombre de la pelicula":"spiderman", #nombre de la pelicula
              "sinopsis":"""Luego de sufrir la picadura de una araña genéticamente modificada, un estudiante de secundaria tímido y torpe adquiere increíbles capacidades como arácnido. Pronto comprenderá que su misión es utilizarlas para luchar contrael mal y defender a sus vecinos.""", #aqui se muestra la sinopsis de la pelicula
             "duracion": "2h 6m", #duraciond de la peli
             "dias disponibles":dias_p3, #dias disponibles de la peli
@@ -175,7 +175,7 @@ asientos_p4_viernes_20_00 = [3, 11, 20, 38, 44, 27, 16, 42] #asientos disponible
 # diccionario donde se muestra las horas y salas de todos los dias disponibles
 
 pelicula_4 = {
-    "nombre de la pelicula": "INTENSAMENTE", #nombre de la pelicula
+    "nombre de la pelicula": "intensamente", #nombre de la pelicula
     "sinopsis":"""Riley acaba de nacer y en el centro de control de su pequeña mente sólo hay sitio
     para Alegría. Poco después aparece Tristeza y, más tarde, Ira, Miedo y Asco.
     Las cinco emociones tendrán que ayudar a la niña cuando, ya con 11 años, su familia
@@ -230,7 +230,7 @@ asientos_p5_sabado_20_00 = [9, 26, 13, 15, 30, 44, 39, 24] #asientos disponibles
 # diccionario donde se muestra las horas y salas de todos los dias disponibles
 
 pelicula_5 = {
-    "nombre de la pelicula": "BARBIE", #nombre de la pelicula
+    "nombre de la pelicula": "barbie", #nombre de la pelicula
     "sinopsis":"""Después de ser expulsada de Barbieland por no ser una muñeca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad.""",#aqui se muestra la sinopsis de la pelicula
     "duracion": "1h 54m", #duracion de la peli
     "dias disponibles": dias_p5, #dias disponibles de la peli
@@ -281,7 +281,7 @@ asientos_p6_viernes_21_00 = [11, 31, 1, 40, 26, 35, 8, 5] #asientos disponibles 
 # diccionario donde se muestra las horas y salas de todos los dias disponibles
 
 pelicula_6 = {
-    "nombre de la pelicula": "COMO ENTRENAR A TU DRAGÓN 3", #nombre de la pelicula
+    "nombre de la pelicula": "como entrenar a tu dragón 3", #nombre de la pelicula
   "sinopsis":"""El joven vikingo Hipo parece haber conseguido que dragones y humanos convivan en paz.  
   Sin embargo, su sueño y el de los demás habitantes de la, isla de Mema no es compartido por otros vikingos,
   especialmente por los brutales cazadores de dragones.""", #aqui se muestra la sinopsis de la pelicula
@@ -332,7 +332,7 @@ asientos_p7_viernes_20_40 = [6, 41, 15, 9, 30, 48, 39, 23] #asientos disponibles
 
 # diccionario donde se muestra las horas y salas de todos los dias disponibles
 
-pelicula_7={  "nombre de la pelicula": "HOTEL TRANSILVANIA 3", #nombre de la pelicula
+pelicula_7={  "nombre de la pelicula": "hotel transilvania 3", #nombre de la pelicula
     "sinopsis":"""Drácula y su familia se embarcan en un lujoso crucero para monstruos. Lo que empieza como unas vacaciones tranquilas se complica cuando Drácula se enamora de la misteriosa capitana del barco, sin saber que ella es descendiente de Van Helsing y tiene un plan secreto para acabar con todos los monstruos.""", #aqui se muestra la sinopsis de la pelicula
     "dias disponibles": dias_p7, #dias disponibles de la peli
     "duracion": "1h 37m",  #duracion de la peli
@@ -382,9 +382,10 @@ asientos_p8_sabado_21_15 = [14, 35, 48, 20, 31, 2, 37, 11]  #asientos disponible
 
 # diccionario donde se muestra las horas y salas de todos los dias disponibles
 pelicula_8 = {
-    "nombre de la pelicula": "TURNING RED", #nombre de la pelicula
+    "nombre de la pelicula": "turning red", #nombre de la pelicula
     "dias disponibles": dias_p8, #dias disponibles de la peli
     "duracion": "1h 40m",  #duracion de la peli
+    "sinopsis":"NO TABA",
     #horas de las peliculas
     "horas de la pelicula martes": horas_martes_p8,
     "horas de la pelicula jueves": horas_jueves_p8,
@@ -406,105 +407,50 @@ pelicula_8 = {
     "asientos disponibles jueves12:15": asientos_p8_jueves_12_15,
     "asientos disponibles jueves16:00": asientos_p8_jueves_16_00,
     "asientos disponibles jueves20:20": asientos_p8_jueves_20_20,
-    "asientos disponibles sabado10:45":  asientos_p8_sabado_10_45,
+    "asientos disponibles sabado10:45": asientos_p8_sabado_10_45,
     "asientos disponibles sabado15:30": asientos_p8_sabado_15_30,
     "asientos disponibles sabado21:15": asientos_p8_sabado_21_15,
 }
 
-print("BIENVENIDO A LA PÁGINA DEL CINE MUNDO S.A")
-n=1 #Contador de intentos
-pregunta= input("¿Está registrado en esta página?: ").lower()#Le preguntamos al usuario si esta registrado y usamos .lower para convertir a minusculas
+
 cuentas= {"yesickrivera@gmail.com":"123"}#Diccionario con las cuentas registradas (correo,contraseña)
 nombres_usuarios={"yesickrivera@gmail.com":"Yesi"}
 boleta_valor=10000 
 asiento_revervados=[]
 contador= 1
+descuento= boleta_valor*0.10
 
-if pregunta=="si":
-    while n<=3:#si el numero de intentos faliidos es mayor a 3 sera un error
-        try:
-            usuario= input("Ingresé su usuario (correo electronico): ")
-            contraseña= input("Ingresé su contraseña: ")
-            if contraseña==cuentas[usuario]:
-                print(f"Bienvenido a su cuenta {nombres_usuarios[usuario]}")
-                break
-            elif contraseña!=cuentas[usuario]:
-                print("Contraseña incorrecto")
-            else:
-                print("No se pudo ingresar a su cuenta")
-            n+=1
-        except KeyError:
-            if n<3:
-                print("Correo incorrecto")
-                n+=1
-            else:
-                print("No se pudo ingresar a su cuenta")
-                break
-else:
-    while True:
-        nombre=input("Ingrese un apodo o su nombre (Por este se le llamará): ")
-        usuario= input("Ingresé un correo electronico será su usuario : ")
-        contraseña= input("Ingresé una contraseña: ")
-        cuentas[usuario]=contraseña
-        nombres_usuarios[usuario]=nombre
-        print(f"\nFELICIDADES, su cuenta a sido creada con éxito,{nombres_usuarios[usuario]}  \n Volvera a la página de ingreso donde beberá ingresar su usuario y contraseña")
-        while n<=3:#si el numero de intentos faliidos es mayor a 3 sera un error
-            try:
-                print("?\n BENVENIDO A LA PÁGINA DEL CINE MUNDO S.A")
-                usuario= input("Ingresé su usuario (correo electronico): ")
-                contraseña= input("Ingresé su contraseña: ")
-                if contraseña==cuentas[usuario]:
-                    print(f"Bienvenido a su cuenta {nombres_usuarios[usuario]}")
-                elif contraseña!=cuentas[usuario]:
-                    print("Contraseña incorrecta")
-                else:
-                    print("No se pudo ingresar a su cuenta")
-                    n+=1
-            except KeyError:
-                if n<3:
-                    print("Correo incorrecto")
-                    n+=1
-                else:
-                    print("No se pudo ingresar a su cuenta")
-                    break
-                
-                    
-        
-
-
-
- 
-
-           
-        
-
-        
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+cartelera=f" Las películas disponibles son: \n {pelicula_1['nombre de la pelicula']} \n duración: {pelicula_1['duracion']} \n Sinopsis: {pelicula_1['sinopsis']} \n {pelicula_2['nombre de la pelicula']} \n duración: {pelicula_2['duracion']} \n Sinopsis: {pelicula_2['sinopsis']} \n {pelicula_3['nombre de la pelicula']} \n duración: {pelicula_3['duracion']} \n Sinopsis: {pelicula_3['sinopsis']} \n {pelicula_4['nombre de la pelicula']} \n duración: {pelicula_4['duracion']} \n Sinopsis: {pelicula_4['sinopsis']} \n {pelicula_5['nombre de la pelicula']} \n duración: {pelicula_5['duracion']} \n Sinopsis: {pelicula_5['sinopsis']} \n {pelicula_6['nombre de la pelicula']} \n duración: {pelicula_6['duracion']} \n Sinopsis: {pelicula_6['sinopsis']} \n {pelicula_7['nombre de la pelicula']} \n duración: {pelicula_7['duracion']} \n Sinopsis: {pelicula_7['sinopsis']} \n {pelicula_8['nombre de la pelicula']} \n duración: {pelicula_8['duracion']} \n Sinopsis: {pelicula_8['sinopsis']}"
+                           
+while True:
+    print("1.Ver cartelera \n 2.Hacer reserva \n 3.Consultar sillas disponibles \n 4.Salir")
+    pregunta_2= input("Ingresé el número correspondiente de la acción que desea realizar: ")
+    if pregunta_2=="1":
+           print(cartelera)
+    elif pregunta_2=="2":
+        print(f"RESERVAR \n Las películas disponibles son:{cartelera}")
+        pregunta_3=input("Ingresé el nombre de la película que desea ver: ").lower()
+        if pregunta_3==pelicula_1["nombre de la pelicula"]:
+            print(f"Los días disponibles para ver la pelicula son: {pelicula_1['dias disponibles']}")
+            pregunta_4= input("¿Qué día desea ver la película?: ").lower()
+            if pregunta_4=="viernes":
+                print(f"Las horas disponibles para ver la pelicula el viernes son: {pelicula_1['horas de la peliculas viernes']}")
+                pregunta_5=input("Ingresé la hora a la que desea ver la pelicula")
+                if pregunta_5=="11:00":
+                    print(f"Los asientos disponibles son:{pelicula_1['asientos disponibles viernes 11:00']}")
+                    pregunta_6=int(input("Ingresé el número del ascientos a reservar (Este no es un número del asiento sino cuantos asientos va a querer):"))
+                    while pregunta_6<=contador:
+                        asiento_reservado=int(input("Ingresé el número de asciento a reservar:"))
+                    if asiento_reservado in asientos_p1_viernes_11_00:
+                            print("El asiento no se encuentra en la lista")
+                            asiento_revervados.append(asiento_reservado)
+                            asientos_p1_viernes_11_00.remove(asiento_reservado)
+                            contador+=1
+                            if len(asiento_revervados)>=4:
+                                 factura=boleta_valor*contador-(descuento*contador)
+                                 print(factura)
+                    else:
+                         print("El asiento no esta")
+                elif pregunta_5=="18:00":
+                    print(f"Los asientos disponibles son:{pelicula_1["asientos disponibles viernes 18:00"]}")
+                            
