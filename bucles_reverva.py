@@ -1,59 +1,53 @@
 print("SISTEMA DE RESERVA DE PELICULAS S.A")
 
 
-#Información de la película 1 guardada 
 
-dias_p1= ("martes", "jueves", "viernes") #dias donde se pueden ver unicamente, del resto pilas
-horas_martes_p1= ("18:00", "12:00", "13:00") #horas habiles para el dia martes
-horas_jueves_p1= ("18:30", "15:00", "14:00") #horas habiles para el dia jueves
-horas_viernes_p1= ("11:00", "8:00", "7:30")#horas habiles para el dia viernes
-salas= (1,2,3) #salas disponibles
-#asiesntos disponibles de los dias y las horas
-asientos_p1_martes_18_00= [1, 3, 4, 5, 6, 7, 8, 9, 12, 15, 16, 18, 20, 21, 22, 25, 29, 32, 34, 38, 40, 41, 43, 47, 50]
-asientos_p1_martes_12_00=[1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 19, 27, 33, 39, 48]
-asientos_p1_martes_13_00=[1, 2, 4, 7, 8, 10, 13, 14, 15, 17, 18, 19, 21, 24, 25, 28, 29, 31, 32, 34, 35, 38, 45, 46]
-asientos_p1_jueves_18_30=[1, 4, 5, 7, 8, 9, 11, 12, 13, 15, 17, 20, 21, 22, 23, 28, 30, 31, 36, 44, 49]
-asientos_p1_jueves_15_00=[3, 4, 6, 7, 8, 9, 10, 11, 13, 15, 16, 18, 20, 22, 23, 25, 28, 29, 32, 33, 39, 40, 44]
-asientos_p1_jueves_14_00= [1, 2, 4, 6, 8, 9, 11, 12, 14, 16, 19, 21, 24, 27, 31, 33, 38, 41, 49]
-asientos_p1_viernes_11_00= [2, 3, 5, 7, 8, 10, 13, 14, 15, 17, 19, 20, 22, 24, 28, 30, 32, 34, 35, 39, 43, 46]
-asientos_p1_viernes_18_00= [1, 3, 5, 6, 7, 9, 10, 11, 13, 15, 16, 18, 19, 21, 23, 25, 27, 29, 30, 33, 36, 40, 42, 44, 48]
-asientos_p1_viernes_17_30= [4, 6, 8, 9, 12, 14, 18, 20, 22, 25, 28, 31, 34, 37, 40, 45, 50]
+peliculas=[]
+def pelicula_crear (nombre, sinopsis, duracion, horario):
+    peliculas.append(({"nombre de la pelicula": nombre,
+            "sinopsis":sinopsis,
+            "duracion": duracion, 
+            "horarios":horario
+}))
+horarios_pelicula_1= {
+    "martes": {
+        "18:00": {"sala": 1, "asientos":[1]},
+        "12:00": {"sala": 1, "asientos": sala_1 },
+        "13:00": {"sala": 1, "asientos":[1, 2, 4, 7, 8, 10, 13, 14, 15, 17, 18, 19, 21, 24, 25, 28, 29, 31, 32, 34, 35, 38, 45, 46]}
+    },
+    "jueves": {
+        "18:30": {"sala": 1, "asientos": [1, 4, 5, 7, 8, 9, 11, 12, 13, 15, 17, 20, 21, 22, 23, 28, 30, 31, 36, 44, 49]},
+         "15:00": {"sala": 1, "asientos":[3, 4, 6, 7, 8, 9, 10, 11, 13, 15, 16, 18, 20, 22, 23, 25, 28, 29, 32, 33, 39, 40, 44]},
+          "14:00": {"sala": 1, "asientos": [1, 2, 4, 6, 8, 9, 11, 12, 14, 16, 19, 21, 24, 27, 31, 33, 38, 41, 49]}
+    },
+    "viernes": {
+        "11:00": {"sala": 1, "asientos": [2, 3, 5, 7, 8, 10, 13, 14, 15, 17, 19, 20, 22, 24, 28, 30, 32, 34, 35, 39, 43, 46] },
+        "18:00": {"sala": 1, "asientos":[1, 3, 5, 6, 7, 9, 10, 11, 13, 15, 16, 18, 19, 21, 23, 25, 27, 29, 30, 33, 36, 40, 42, 44, 48]},
+        "17:30": {"sala": 1, "asientos": [4, 6, 8, 9, 12, 14, 18, 20, 22, 25, 28, 31, 34, 37, 40, 45, 50]}
+    }
+}
 
-# diccionario donde se muestra las horas y salas de todos los dias disponibles
+pelicula_1= pelicula_crear ("encantada", "La bella princesa Giselle es transportada por un hechizo de la malvada reina Narissa desde su mágico mundo a la moderna y caótica Manhattan actual.Inmersaen un entorno que desconoce,Giselle deambula por un mundo desorganizado.", "1h 47m", horarios_pelicula_1)
 
-pelicula_1= {"nombre de la pelicula":"encantada", #nombre de la pelicula
-            "sinopsis":"""La bella princesa Giselle es transportada por un hechizo de la malvada reina 
-            Narissa desde su mágico mundo a la moderna y caótica Manhattan actual.Inmersa
-            en un entorno que desconoce,Giselle deambula por un mundo desorganizado.""" , #aqui se muestra la sinopsis de la pelicula
-            "duracion": "1h 47m", #duracion de la peli
-            "dias disponibles": dias_p1, #dias disponibles de la peli
-            #horas de las peliculas
-            "horas de la pelicula martes": horas_martes_p1,
-            "horas de la pelicula jueves": horas_jueves_p1, 
-            "horas de la peliculas viernes": horas_viernes_p1,
-            #salas disponibles de la pelicula de las horas de la peli
-            "sala martes 18:00":salas[1],
-            "sala martes 12:00":salas[0],
-            "sala martes 13:00":salas[2],
-            "sala jueves 18:30":salas[1],
-            "sala jueves 15:00":salas[0],
-            "sala jueves 14:00":salas[2],
-            "sala viernes 11:00":salas[1],
-            "sala viernes 18:00":salas[0],
-            "sala viernes 17:30":salas[2],
-            #aqui se muestran los asintos disponibles de los dias con las horas
-            "asientos disponibles martes 18:00": asientos_p1_martes_18_00,
-            "asientos disponibles martes 12:00": asientos_p1_martes_12_00,
-            "asientos disponibles martes 13:00": asientos_p1_martes_13_00,
-            "asientos disponibles jueves 18:30": asientos_p1_jueves_18_30,
-            "asientos disponibles jueves 15:00": asientos_p1_jueves_15_00,
-            "asientos disponibles jueves 14:00": asientos_p1_jueves_14_00,
-            "asientos disponibles viernes 11:00": asientos_p1_viernes_11_00,
-            "asientos disponibles viernes 18:00": asientos_p1_viernes_18_00,
-            "asientos disponibles viernes 17:30": asientos_p1_viernes_17_30
-            }
+print(pelicula_1)
 
-#Información de la película 2 guardada 
+horarios_pelicula_2= {
+    "martes": {
+        "18:00": {"sala": 2, "asientos": [1, 3, 4, 5, 6, 7, 8, 9, 12, 15, 16, 18, 20, 21, 22, 25, 29, 32, 34, 38, 40, 41, 43, 47, 50] },
+        "12:00": {"sala": 2, "asientos":[1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 19, 27, 33, 39, 48]},
+        "13:00": {"sala": 2, "asientos":[1, 2, 4, 7, 8, 10, 13, 14, 15, 17, 18, 19, 21, 24, 25, 28, 29, 31, 32, 34, 35, 38, 45, 46]}
+    },
+    "jueves": {
+        "18:30": {"sala": 2, "asientos": [1, 4, 5, 7, 8, 9, 11, 12, 13, 15, 17, 20, 21, 22, 23, 28, 30, 31, 36, 44, 49]},
+         "15:00": {"sala": 2, "asientos":[3, 4, 6, 7, 8, 9, 10, 11, 13, 15, 16, 18, 20, 22, 23, 25, 28, 29, 32, 33, 39, 40, 44]},
+          "14:00": {"sala": 2, "asientos": [1, 2, 4, 6, 8, 9, 11, 12, 14, 16, 19, 21, 24, 27, 31, 33, 38, 41, 49]}
+    },
+    "viernes": {
+        "11:00": {"sala": 2, "asientos": [2, 3, 5, 7, 8, 10, 13, 14, 15, 17, 19, 20, 22, 24, 28, 30, 32, 34, 35, 39, 43, 46] },
+        "18:00": {"sala": 2, "asientos":[1, 3, 5, 6, 7, 9, 10, 11, 13, 15, 16, 18, 19, 21, 23, 25, 27, 29, 30, 33, 36, 40, 42, 44, 48]},
+        "17:30": {"sala": 2, "asientos": [4, 6, 8, 9, 12, 14, 18, 20, 22, 25, 28, 31, 34, 37, 40, 45, 50]}
+    }
+}
 
 dias_p2= ("lunes", "miercoles", "viernes") #dias donde se pueden ver unicamente, del resto pilas
 horas_lunes_p2= ("20:00", "18:00", "15:00") #horas habiles para el dia lunes
@@ -435,22 +429,34 @@ while True:
             pregunta_4= input("¿Qué día desea ver la película?: ").lower()
             if pregunta_4=="viernes":
                 print(f"Las horas disponibles para ver la pelicula el viernes son: {pelicula_1['horas de la peliculas viernes']}")
-                pregunta_5=input("Ingresé la hora a la que desea ver la pelicula")
+                pregunta_5=input("Ingresé la hora a la que desea ver la pelicula: ")
                 if pregunta_5=="11:00":
                     print(f"Los asientos disponibles son:{pelicula_1['asientos disponibles viernes 11:00']}")
-                    pregunta_6=int(input("Ingresé el número del ascientos a reservar (Este no es un número del asiento sino cuantos asientos va a querer):"))
-                    while pregunta_6<=contador:
-                        asiento_reservado=int(input("Ingresé el número de asciento a reservar:"))
-                    if asiento_reservado in asientos_p1_viernes_11_00:
-                            print("El asiento no se encuentra en la lista")
+                    pregunta_6=int(input("Ingresé el número del ascientos a reservar (Este no es un número del asiento sino cuantos asientos va a querer): "))
+                    while pregunta_6>=contador:
+                        asiento_reservado=float(input("Ingresé el número de asciento a reservar:"))
+                        if asiento_reservado in pelicula_1["asientos disponibles viernes 11:00"]:
+                            print("El asiento se encuentra en la lista")
                             asiento_revervados.append(asiento_reservado)
                             asientos_p1_viernes_11_00.remove(asiento_reservado)
                             contador+=1
                             if len(asiento_revervados)>=4:
-                                 factura=boleta_valor*contador-(descuento*contador)
-                                 print(factura)
-                    else:
-                         print("El asiento no esta")
-                elif pregunta_5=="18:00":
-                    print(f"Los asientos disponibles son:{pelicula_1["asientos disponibles viernes 18:00"]}")
-                            
+                                factura=boleta_valor*contador-(descuento*contador)
+                                print(f"El costo de su compra es {factura}")
+                                print(f"FACTURA \n película: {pelicula_1['nombre de la pelicula']} \n Día:viernes \n Hora:11:00 \n Sala: {pelicula_1['sala viernes 11:00']} \n Boletas: {len(asiento_revervados)} \n Nùmero de asientos: {asiento_revervados} ")
+                                asiento_reservado.clear
+                        else:
+                            print("El asiento no esta")
+    elif pregunta_2=="3":
+       pregunta_3=input("Ingresé el nombre de la película que desea ver los asientos disponibles: ").lower()
+       if pregunta_3==pelicula_1["nombre de la pelicula"]:
+            print(f"Los días disponibles para ver la pelicula son: {pelicula_1['dias disponibles']}")
+            pregunta_4= input("¿Qué día desea ver la película?: ").lower()
+            if pregunta_4=="viernes":
+                print(f"Las horas disponibles para ver la pelicula el viernes son: {pelicula_1['horas de la peliculas viernes']}")
+                pregunta_5=input("Ingresé la hora a la que desea ver la pelicula: ")
+                if pregunta_5=="11:00":
+                    print(f"Los asientos disponibles son:{pelicula_1['asientos disponibles viernes 11:00']}")
+    elif pregunta_2=="4":
+        print("Gracias por visitar nuestra página, HASTA LUEGO :)")
+        break    
